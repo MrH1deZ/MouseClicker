@@ -15,6 +15,11 @@ EXIT_KEY = KeyCode(char='e')  # Key to exit the script
 # Clicker state
 clicking = False
 
+print("Welcome My Master")
+print("Made by Mr.H1deZ")
+print("Press 't' to toggle the clicker on/off")
+print("Press `E` to exit")
+
 def toggle_clicker(key):
     global clicking
     if key == TOGGLE_KEY:
@@ -30,6 +35,7 @@ def toggle_clicker(key):
 def click_mouse():
     while True:
         if clicking:
+            print("Mouse Click +1.")
             mouse.click(Button.left, 1)
             time.sleep(CLICK_DELAY)
         else:
